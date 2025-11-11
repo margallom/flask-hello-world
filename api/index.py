@@ -51,6 +51,6 @@ def sensor():
         return (f"Current Time: , {result}")
     except Exception as e:
         return(f"Failed to connect: {e}")
-@app.route('/pagina)
-           def pagina():
-               return render_template("pagina.html")
+    @app.route('/pagina')
+    def pagina():
+        return render_template("pagina.html")
