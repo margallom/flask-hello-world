@@ -24,7 +24,7 @@ def sensor():
     # Connect to the database
     try:
         connection = psycopg2.connect(
-            connection
+            CONNECTION
         )
         print("Connection successful!")
         
@@ -51,7 +51,7 @@ def pagina():
 def get_sensor(sensor_id):
     try:
         conn = psycopg2.connect(
-            connection
+            CONNECTION
         )
         cur = conn.cursor()
 
