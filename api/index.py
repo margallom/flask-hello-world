@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask render_template
 import psycopg2
 from dotenv import load_dotenv
 import os
@@ -51,3 +51,6 @@ def sensor():
         return (f"Current Time: , {result}")
     except Exception as e:
         return(f"Failed to connect: {e}")
+@app.route('/pagina)
+           def pagina():
+               return render_template("pagina.html")
